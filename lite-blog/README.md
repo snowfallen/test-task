@@ -1,3 +1,53 @@
+**Repository** 
+```
+https://github.com/snowfallen/test-task
+```
+
+## Running:
+
+Install PHP 8.1 or later: Installation instructions will depend on your operating system. You can find instructions online.
+Install Composer: Download and install Composer according to the instructions on the official website https://getcomposer.org/download/.
+
+To build and run:
+```
+cd test-task/lite-blog/
+```
+
+```
+bash scripts/build.sh
+```
+
+After this steps you'll have working application. Happy Testing! :)
+
+### Base Laravel commands:
+
+*Run project*
+```
+php artisan serve
+```
+
+*Run migration*
+```
+php artisan migrate:fresh
+```
+
+*Run seeders*
+```
+php artisan db:seed
+```
+
+*Run migration with seeders*
+```
+php artisan migrate:fresh --seed
+```
+
+*Run tests (this command delete all data from db, run migration with seeders to get tests datas again)*
+```
+php artisan test
+```
+
+# Short info about project
+
 ## Controllers
 
 **ArticleController:**
