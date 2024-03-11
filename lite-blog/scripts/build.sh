@@ -6,6 +6,7 @@ if [ ! -f .env ]; then
 fi
 
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate
 php artisan test
+php artisan db:seed
 php artisan serve
