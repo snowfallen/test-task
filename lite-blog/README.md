@@ -8,13 +8,33 @@ https://github.com/snowfallen/test-task
 Install PHP 8.1 or later: Installation instructions will depend on your operating system. You can find instructions online.
 Install Composer: Download and install Composer according to the instructions on the official website https://getcomposer.org/download/.
 
-To build and run:
-```
-cd test-task/lite-blog/
-```
+To build and run(you must be in the project dir):
 
 ```
 bash scripts/build.sh
+```
+*Press "yes" to create sqlite db*
+
+*Or you can do it manually.*
+Create .env file and copy all from .env.example, ant then:
+```
+php artisan key:generate
+```
+
+```
+php artisan migrate
+```
+
+```
+php artisan test
+```
+
+```
+php artisan db:seed
+```
+
+```
+php artisan serve
 ```
 
 After this steps you'll have working application. Happy Testing! :)
